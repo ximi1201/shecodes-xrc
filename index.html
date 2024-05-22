@@ -3,24 +3,34 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="src/styles.css">
     <title>forecast-project</title>
   </head>
   <body>
-    <div>
-      <header>
-        <form>
-          <input type="search" placeholder="Enter a City.." required />
-          <input type="submit" value="search" />
+    <div class="weather-app"> 
+<header>
+        <form class="searchForm">
+          <input type="search" placeholder="Enter a City.." required class="searchInput"/>
+          <input type="submit" value="search" class="searchButton"/>
         </form>
       </header>
-    <h1>Miami</h1>
-    </div>
-    <p>Tuesday 8:08pm, scatter clouds
+      <main>
+      <div class="weather-data">
+        <div>
+    <h1 class="searchCity">Miami</h1>
+   
+    <p class="weather-details">Tuesday 8:08pm, scatter clouds
       <br/>
       Humidity: 80%, Wind: 8 mph
     </p>
     </div>
-    <div>🌤️ 82&deg;F</div>
+    <div class="weatherResults">
+    <div class="weather-icon">🌤️ </div> 
+    <div class="weather-temp">82</div>
+    <div class="weather-unit">&deg;F</div>
+    </div>
+    
+    </main>
     <footer>
       Coded by
       <a href="https://github.com/ximi1201" target="_blank"> Ximena</a> and is
@@ -35,5 +45,6 @@
         >Netlify</a
       >
     </footer>
+    </div>
   </body>
 </html>
