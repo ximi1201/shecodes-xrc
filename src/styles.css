@@ -25,7 +25,7 @@ main {
   background-color: rgb(245 233 247);
   border: none;
   border-radius: 6px;
-  width: 80%;
+  width: 90%;
   padding: 15px 20px;
 }
 .searchInput {
@@ -38,7 +38,7 @@ main {
 }
 .searchButton {
   background: #6d256d;
-  padding: 11px 15px;
+  padding: 15px 25px;
   border: none;
   border-radius: 6px;
   color: white;
@@ -96,11 +96,12 @@ main {
   display: flex;
   justify-content: space-around;
   margin-top: 30px;
+  text-align: center;
 }
 
 .weather-forecast-date {
   text-align: center;
-  color: rgba(39, 33, 66, 0.4);
+  color: rosybrown;
   font-size: 16px;
   line-height: 20px;
   margin-bottom: 10px;
@@ -113,14 +114,16 @@ main {
 }
 .weather-forecast-temperatures {
   text-align: center;
-  color: #f65282;
+  color: palevioletred;
   margin-top: 10px;
   display: flex;
   justify-content: center;
+  font-size: 13px;
 }
 
 .weather-forecast-temperature {
   padding: 0 10px;
+  opacity: 5px;
 }
 
 footer {

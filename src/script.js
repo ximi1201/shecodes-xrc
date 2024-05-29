@@ -56,7 +56,7 @@ function displayForecast() {
   let forecastHtml = "";
 
   days.forEach(function (day) {
-    forecastHTML =
+    forecastHtml =
       forecastHtml +
       `
 <div class="weather-forecast-day">
@@ -71,11 +71,12 @@ function displayForecast() {
 </div>
 `;
   });
-  let forecast = document.querySelector("#forecast");
+  let forecastElement = document.querySelector("#forecast");
   forecastElement.innerHTML = forecastHtml;
 }
 
 let searchFormElement = document.querySelector("#searchForm");
 searchFormElement.addEventListener("submit", handleSearchSubmit);
+
 searchCity("Miami");
 displayForecast();
